@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="calculator.css">
+    <title>Simple Calculator</title>
+  </head>
+  <body>
+    <div class="heading"><h3>Task 4:Simple Calculator &#8594</h3></div>
+    <div class="calculator">
+      <input type="text" id="display" onkeydown="handleKeyPress(event)" readonly>
+      <div>
+        <button onclick="handleClear()" class="operator d1">AC</button>
+        <button onclick="handleDelete()" class="operator d2">DEL</button>
+        <button onclick="handleMouseClick('%')" class="operator">%</button>
+        <button onclick="handleMouseClick('/')" class="operator">/</button>
+      </div>
+      <div>
+        <button onclick="handleMouseClick('7')">7</button>
+        <button onclick="handleMouseClick('8')">8</button>
+        <button onclick="handleMouseClick('9')">9</button>
+        <button  onclick="handleMouseClick('*')" class="operator">*</button>
+      </div>
+      <div>
+        <button onclick="handleMouseClick('4')">4</button>
+        <button onclick="handleMouseClick('5')">5</button>
+        <button onclick="handleMouseClick('6')">6</button>
+        <button onclick="handleMouseClick('-')" class="operator">-</button>
+      </div>
+      <div>
+        <button onclick="handleMouseClick('1')">1</button>
+        <button onclick="handleMouseClick('2')">2</button>
+        <button onclick="handleMouseClick('3')">3</button>
+        <button onclick="handleMouseClick('+')" class="operator">+</button>
+      </div>
+      <div>
+        <button onclick="handleMouseClick('00')">00</button>
+        <button onclick="handleMouseClick('0')">0</button>
+        <button onclick="handleMouseClick('.')">.</button>
+        <button onclick="calculateResult()" class="equal">=</button>
+      </div>
+    </div>
+  </div>
+  
+    <script src="calculator.js"></script>  
+  </body>
+</html>
